@@ -1,16 +1,9 @@
-## Surveys ;)
+## React & Node App Starter ;)
 
 ### To Run:
 
 ```
 npm install
-node server/server
+npm start
 
 ```
-
-for Client use Bower
-
-for Server use NPM 
-
-
-English only
