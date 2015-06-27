@@ -1,8 +1,9 @@
 {
-  "name": "surveys",
+  "name": "React-Node-Starter",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
+  "author": "Rene J. Polo <renejpolo@me.com>",
   "scripts": {
     "watch": "watchify public/app.js -o public/bundle.js -v",
     "browserify": "browserify public/app.js | uglifyjs > public/bundle.js",
