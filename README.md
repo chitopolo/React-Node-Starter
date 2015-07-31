@@ -3,7 +3,9 @@
 ### To Run:
 
 ```
+
 npm install
-npm start
+gulp js
+nodemon server/server
 
 ```
