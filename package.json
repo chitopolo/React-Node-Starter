@@ -3,17 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
-  "author": "Rene J. Polo <renejpolo@me.com>",
+  "author": "",
   "scripts": {
     "watch": "watchify public/main.js -o public/bundle.js -v",
     "browserify": "browserify public/main.js -t babelify | uglifyjs > public/bundle.js",
     "build": "npm run browserify ",
     "start": "node server/server.js"
   },
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.0",
+    "install": "^0.1.8",
+    "npm": "^2.13.2",
     "react": "^0.13.3",
     "react-router": "^0.13.3",
     "superagent": "^1.2.0"
