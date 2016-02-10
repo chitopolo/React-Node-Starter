@@ -1,7 +1,7 @@
 var React = require('react');
-var Router = require('react-router');
-var xhr = require('superagent');
+var ReactDOM = require('react-dom')
 
+var Router = require('react-router');
 
 var Home = React.createClass({
 
@@ -16,4 +16,4 @@ var Home = React.createClass({
 });
 
 
-React.render(<Home />, document.body)
+ReactDOM.render(<Home />, document.body)
