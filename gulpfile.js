@@ -33,11 +33,7 @@ var customOpts = {
 var options = assign({}, watchify.args, customOpts);
 var client = watchify(browserify(options)); 
 
-// add transformations here
-// client.transform(babelify);
-// b.transform(uglify);
-
-gulp.task('client', bundle); // so you can run `gulp js` to build the file
+gulp.task('client', bundle); // so you can run `gulp client` to build the file
 client.on('update', bundle); // on any dep update, runs the bundler
 client.on('log', gutil.log); // output build logs to terminal
 

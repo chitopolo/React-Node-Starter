@@ -5,7 +5,7 @@
 ```
 
 npm install
-gulp js
-nodemon server/server
+gulp client
+node server/server.js
 
 ```

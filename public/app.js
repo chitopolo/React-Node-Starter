@@ -1,7 +1,7 @@
 import React from 'react'
-var ReactDOM = require('react-dom')
+import { render } from 'react-dom'
+import { Router, Route, Link, browserHistory } from 'react-router'
 
-var Router = require('react-router');
 
 var Home = React.createClass({
 
@@ -9,6 +9,7 @@ var Home = React.createClass({
 		return (
 			<div>
 				<h1>Welcome</h1>
+              {this.props.children}
 			</div>
 		);
 	}
@@ -16,4 +17,9 @@ var Home = React.createClass({
 });
 
 
-ReactDOM.render(<Home />, document.body)
+render((
+  <Router history={browserHistory}>
+    <Route path="/" component={Home}>
+    </Route>
+  </Router>
+), document.getElementById('main'))
