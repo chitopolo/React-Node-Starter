@@ -21,8 +21,6 @@ gulp.task('server', function () {
 });
 
 
-
-
 // add custom browserify options here
 var customOpts = {
   entries: ['./public/app.js'],
